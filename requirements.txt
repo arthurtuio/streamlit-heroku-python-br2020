@@ -1,2 +1,2 @@
-streamlit==0.66.0
+streamlit==0.69.2
 heroku
