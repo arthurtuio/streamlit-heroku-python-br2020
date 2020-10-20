@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from examples.english.lib.base_dfs_and_lists import simple_df
+from lib.base_dfs_and_lists import simple_df
 
 
 def st_write_examples():
@@ -17,7 +17,7 @@ def st_write_examples():
     st.write(f"My name is: {my_name}! I have {my_age} years old!")
 
     st.write("\n\n Theres much more things possible with 'write', like trying to do a Dataframe!")
-    st.write(pd.DataFrame(simple_df))
+    st.write(pd.DataFrame(simple_df()))
 
 
-st_write_examples()
+#  st_write_examples()

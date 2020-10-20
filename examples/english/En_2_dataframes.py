@@ -41,7 +41,7 @@ def st_dataframes_example():
     st.markdown("""
         ### What we learned ###
 
-        You can show dataframes, lists (and also dicts) in the screen easily.
+        You can show dataframes, lists (also dicts and tuples(?)) in the screen easily.
 
         You can make operations in those objects in the same code that you use streamlit.
         
@@ -49,4 +49,4 @@ def st_dataframes_example():
         """)
 
 
-st_dataframes_example()
+#  st_dataframes_example()
