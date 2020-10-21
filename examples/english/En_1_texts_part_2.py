@@ -5,7 +5,7 @@ def st_title_and_mkdn_examples():
     st.title("And with 'st.title' a title is created!")
 
     st.markdown("""
-        Personally, i prefer to everything related to texts with st.markdown.
+        Personally, i prefer to everything related to texts with `st.markdown`.
         
         I can write everything I want in this block, and can also use **bold**, _italic_, 
         everything that's available in markdown.
