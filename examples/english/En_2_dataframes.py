@@ -49,4 +49,4 @@ def st_dataframes_example():
         """)
 
 
-#  st_dataframes_example()
+st_dataframes_example()

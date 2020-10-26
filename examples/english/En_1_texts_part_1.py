@@ -20,4 +20,4 @@ def st_write_examples():
     st.write(pd.DataFrame(simple_df()))
 
 
-#  st_write_examples()
+st_write_examples()
