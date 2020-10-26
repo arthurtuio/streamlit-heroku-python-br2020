@@ -102,4 +102,3 @@ def st_interactivity_example():
 
 
 st_interactivity_example()
-w
