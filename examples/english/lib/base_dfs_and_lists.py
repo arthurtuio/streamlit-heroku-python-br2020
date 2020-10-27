@@ -55,4 +55,4 @@ def simple_df():
 
 
 def simple_list():
-    return ["Arthur", "Berna", "Claudiomar", "Danilo", "Êrica", "Bellon", "João", "Kauan", "Queiroz"]
+    return simple_df()["Names"].tolist()

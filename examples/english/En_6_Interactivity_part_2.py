@@ -1,6 +1,4 @@
-#  Work in Progress
 import streamlit as st
-from lib.create_plot import CreatePlot
 from lib.base_dfs_and_lists import simple_df
 from lib.filter_rows import filter_rows
 

@@ -3,7 +3,7 @@ import pandas as pd
 from lib.base_dfs_and_lists import simple_df
 
 
-def st_write_examples():
+def st_text_examples_part_1():
     st.write("Writing texts with Streamlit is super easy :)")
 
     st.write("You can even jump lines \n \n Yeah!")
@@ -20,4 +20,4 @@ def st_write_examples():
     st.write(pd.DataFrame(simple_df()))
 
 
-st_write_examples()
+st_text_examples_part_1()

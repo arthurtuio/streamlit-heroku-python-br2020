@@ -1,29 +1,23 @@
 import streamlit as st
-from lib.base_dfs_and_lists import simple_df, simple_list
-from En_1_texts_part_1 import st_write_examples
-from En_1_texts_part_2 import st_title_and_mkdn_examples
-from En_2_dataframes import st_dataframes_example
-
-
-# def remove_df_or_list_last_row(obj):
-#     obj = obj[:-1]
-#     return obj
+from En_1_texts_part_1 import st_text_examples_part_1
+from En_2_texts_part_2 import st_text_examples_part_2
+from En_3_dataframes import st_dataframes_example
 
 
 def st_interactivity_example():
     st.markdown("""
         ## Interactivity!! ##
 
-        For me, this is what makes streamlit an 10/10 tool.
+        For me, this is what makes `streamlit` an excellent tool.
         
-        Theres so much to do!
+        Theres so much we can do about interactivity!
         
         Like, for example, **creating a button:**
         """)
-    st.button('Press this button')
+    st.button('Press this button')  # Here we just created it!
 
     st.markdown("**Or creating a checkbox:**")
-    st.checkbox("Press this checkbox")
+    st.checkbox("Press this checkbox")  # And here an checkbox!
 
     st.markdown("Or a slider!!!")
     st.slider(
@@ -31,14 +25,13 @@ def st_interactivity_example():
     )
 
     st.markdown("""
-    
     We can also use those methods to call another methods, or use their return!
     
     Like, calling the other examples methods if an button is pressed!
     """)
     if st.button('Texts Example'):
-        st_write_examples()
-        st_title_and_mkdn_examples()
+        st_text_examples_part_1()  # Calling the
+        st_text_examples_part_2()
 
     if st.button('Dataframes Example'):
         st_dataframes_example()
@@ -48,7 +41,7 @@ def st_interactivity_example():
             ## Important  ##
     
             Once an button is clicked, it cannot be unclicked. You can only select another button, which
-            will make the last one be 'unclicked'. 
+            will make the last one be 'unclicked'.
         """)
 
     if st.checkbox("Working with buttons/checkbox return"):
@@ -80,7 +73,7 @@ def st_interactivity_example():
 
         if button_return:
             st.markdown("""
-                ## Important!!!!!! AAAAAAA ##
+                ## Important!!!!!! ##
                 **Its not a good pratice to use the return of the button to trigger another code.**
                 
                 Because, once you click anything else, like that slider, the button will be 'unpressed', 

@@ -31,11 +31,11 @@ def st_dataframes_example():
 
         """)
 
-    new_df = remove_df_or_list_last_row(simple_df())
+    new_df = remove_df_or_list_last_row(simple_df())  # assigning the result of the operation to another variable
     st.dataframe(new_df)
 
-    st.markdown("Now removing list last row")
-    new_list = remove_df_or_list_last_row(simple_list())
+    st.markdown("Now removing list last row:")
+    new_list = remove_df_or_list_last_row(simple_list())  # assigning the result of the operation to another variable
     st.dataframe(new_list)
 
     st.markdown("""

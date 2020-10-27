@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-def st_title_and_mkdn_examples():
+def st_text_examples_part_2():
     st.title("And with 'st.title' a title is created!")
 
     st.markdown("""
@@ -34,4 +34,4 @@ def st_title_and_mkdn_examples():
         """)
 
 
-st_title_and_mkdn_examples()
+st_text_examples_part_2()
