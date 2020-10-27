@@ -5,15 +5,17 @@ from lib.filter_rows import filter_rows
 
 def st_interactivity_example_part_2():
     st.markdown("""
-        ## Filtering Dataframes through interactivity ##
+        ## Using interactivity to filter dataframes ##
         
-        Aqui a gente vai brincar de filtrar dataframes usando interatividade.
+        This example will show in pratice the potential of using
+        interactivity to filter dataframes.
         
-        Pra isso, primeiro precisamos criar uma selectbox para o usuário.
+        You can use this same interactivity (`buttons`, `checkbox`, `selectbox`, etc)
+        to modify, **in real time**, plots, methods (like an prediction method only if
+        the user chooses a specific input), and much more.
         
-        Vamos fazer a filtragem do dataframe usando uma classe auxiliar, para focarmos 
-        mais na interatividade que o streamlit permite
-        
+        We're not entering in the complexity of filter data in dataframe, just using
+        and abstract method that does that.
         """)
     df = simple_df()
 
@@ -26,16 +28,13 @@ def st_interactivity_example_part_2():
         row_unique_values
     )
 
-    st.markdown(f"O valor selecionado é assim: `{selected_row_value}`, do tipo `{type(selected_row_value)}`")
+    st.markdown(f"The selected value is: `{selected_row_value}`, which have this type `{type(selected_row_value)}`")
 
     st.markdown("""
-        **Abaixo vemos dois dataframes:**
-        - O primeiro é filtrado pela entrada (perceba que para isso no código tivemos que criar um
-        novo dataframe, filtrado pela linha selecionada.
-        
-        - O segundo é o dataframe antigo, que não sofreu alterações, porque em nenhum momento
-        foi sobrescrito.
-        
+        **Below we see 2 dataframes:**
+        - First one is filtered by the input (notice that, in order to do this in the code, we had to create a
+        new dataframe, filtered by the selected line);
+        - Second is the old dataframe, which hasn't suffered any alterations, since it hasn't been overwritten.
     """)
 
     df_filtrado = filter_rows_aux_class.filter_df_using_selected_rows_values(
@@ -44,6 +43,10 @@ def st_interactivity_example_part_2():
 
     st.dataframe(df_filtrado)
     st.dataframe(df)
+
+    st.markdown("""### Lets also change an plot with the input: ###""")
+    st.bar_chart(df_filtrado)
+    st.markdown("The plot is not that useful, as it converts the index of the rows in values :/")
 
 
 st_interactivity_example_part_2()

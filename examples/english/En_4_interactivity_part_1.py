@@ -4,7 +4,7 @@ from En_2_texts_part_2 import st_text_examples_part_2
 from En_3_dataframes import st_dataframes_example
 
 
-def st_interactivity_example():
+def st_interactivity_example_part_1():
     st.markdown("""
         ## Interactivity!! ##
 
