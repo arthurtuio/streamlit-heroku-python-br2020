@@ -9,8 +9,7 @@ In order to dowload this repo in your PC, you can just clone it, by typing in yo
 `git clone https://github.com/arthurtuio/streamlit-heroku-python-br-2020.git`
 
 Then, you have to install the required libraries to run the code. You can do that this way:
-- If you use Python2: `pip install -r requirements.txt`
-- If you use Python3: `pip3 install -r requirements.txt`
+- `pip3 install -r requirements.txt`
 
 ## Streamlit Example scripts
 In the folder`/examples/english`, there are examples scripts that you can run in streamlit, in order to understand better the lib.
@@ -28,8 +27,7 @@ Para baixar este repositório em seu PC, você pode simplesmente cloná-lo, digi
 `git clone https://github.com/arthurtuio/streamlit-heroku-python-br-2020.git`
 
 Em seguida, você deve instalar as bibliotecas necessárias para executar o código. Você pode fazer isso desta forma:
-- Se você usa Python2: `pip install -r requirements.txt`
-- Se você usa Python3: `pip3 install -r requirements.txt`
+- `pip3 install -r requirements.txt`
 
 ## Exemplo de scripts do Streamlit
 Na pasta `/examples/english`, há exemplos de scripts que podem ser executados no streamlit, para entender melhor a lib.
