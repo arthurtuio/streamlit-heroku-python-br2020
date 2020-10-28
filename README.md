@@ -17,6 +17,8 @@ In the folder`/examples/english`, there are examples scripts that you can run in
 To run any of them, just type in the command line: `streamlit run {example_name}`, where `{example_name}` is the file name, like that:
 `streamlit run En_6_Interactivity_part_2.py`
 
+----
+
 # Português
 Repo publico criado para armazenar o codigo do tutorial "Criando uma aplicação de dados com Streamlit e deployando a mesma com Heroku" da Conferencia Python Brasil 2020.
 
