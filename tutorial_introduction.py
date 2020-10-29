@@ -93,9 +93,9 @@ class TutorialIntroduction:
             - Esse site aqui explica como usar `git clone`: 
             https://docs.github.com/pt/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
             
-            O link pra inscrição da conferência tá no bloco `3. Inscrição para a Python Brasil 2020`
+            O link pra inscrição da conferência está no bloco `3. Inscrição para a Python Brasil 2020`
             
-            Para configurar o ambiente local, só acessar esse repo e seguir o tutorial do `README`:
+            Para configurar o ambiente local, só acessar esse repositório e seguir o tutorial do `README`:
             https://github.com/arthurtuio/streamlit-heroku-python-br-2020
             
         """)
@@ -231,15 +231,17 @@ class TutorialIntroduction:
             Permite a criação, execução e operação de aplicações, tudo de forma
             bem simples, tirando aquele stress de mexer com infraestrutura.
             
-            Pra saber mais sobre, só acessa o site: https://www.heroku.com/what#
+            Pra saber mais sobre, só acessar o site: https://www.heroku.com/what#
                                     
-            Essa página web foi deployada (foi pra internet) usando `heroku`!
+            Essa página web foi deployada (foi para a internet) usando `heroku`!
         """)
 
     @staticmethod
     def _git_description():
         st.markdown("""
             ### **Git** ###
+
+            << Adicionar uma descrição pra Git >>
 
             O código de programação desta página (e do resto do tutorial) está 
             armazenado num repositório público do `Github`! 
