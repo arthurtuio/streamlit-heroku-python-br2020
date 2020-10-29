@@ -1,4 +1,4 @@
 streamlit==0.69.2
-heroku
+heroku3==4.2.3
 plotly==4.11.0
 numpy==1.19.2
