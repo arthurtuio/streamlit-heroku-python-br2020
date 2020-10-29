@@ -1,1 +1,1 @@
-web: gunicorn gettingstarted.wsgi
+web: sh setup.sh && streamlit run tutorial_introduction.py
