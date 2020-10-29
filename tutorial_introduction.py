@@ -133,6 +133,8 @@ class TutorialIntroduction:
             abaixo e ver algumas coisas do que é possível fazer :)
         """)
 
+        st.image("https://media.giphy.com/media/ule4vhcY1xEKQ/giphy.gif")
+
         if st.checkbox("Analisar tabelas/dataframes e gerar gráficos dos mesmos!"):
             st.markdown("""
                 #### **Analisar tabelas/dataframes e gerar gráficos dos mesmos!** ####
