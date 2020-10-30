@@ -84,9 +84,9 @@ class TutorialIntroduction:
                 1. Conhecimento básico sobre Python - e também alguma familiaridade com estruturas de dados.
                 2. Ter alguma ferramenta (IDE) que permita programar em Python em seu PC (recomendo o PyCharm Community);
         
-            Além dessas, se você já entender de Github, vai ver que será muito fácil preprar sua aplicação. 
+            Além dessas, se você já entender de Github, vai ver que será muito fácil preparar sua aplicação. 
             **Se você não entende, se inscreve aí na Python Brasil 2020 e vai no meu tutorial!**
-            Ou, se a conferência já passou, tá tranquilo, você só vai precisar criar uma conta no Github, 
+            Ou, se a conferência já passou, tá tranquilo, você só vai precisar criar uma conta no **Github**, 
             e saber usar o comando `git clone`. 
             
             - Pra criar conta é só acessar aqui: https://github.com/join
@@ -241,7 +241,13 @@ class TutorialIntroduction:
         st.markdown("""
             ### **Git** ###
 
-            << Adicionar uma descrição pra Git >>
+            Git é um sistema de controle de versões distribuiído, usado em desenvolvimento de software,
+             mas pode ser usado pra registrar o histórico de edições de qualquer tipo de arquivo.
+            
+            Uma das plataformas que usa o Git é o `GitHub`, e é amplamente utilizado por programadores para
+            divulgação de seus trabalhos ou para que outros programadores contribuam com o projeto,
+            além de promover fácil comunicação através de recursos que relatam
+            problemas ou mesclam repositórios remotos (issues, pull request).
 
             O código de programação desta página (e do resto do tutorial) está 
             armazenado num repositório público do `Github`! 
