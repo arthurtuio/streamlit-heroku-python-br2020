@@ -1,2 +1,5 @@
-jupyter_scripts
+jupyter_scripts/
 exploring_IBM_dataset.py
+__pycache__/
+.venv
+.idea/
