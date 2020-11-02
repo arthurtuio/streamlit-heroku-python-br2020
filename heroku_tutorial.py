@@ -29,10 +29,8 @@ class HerokuTutorial:
             "1.Revisão do que vemos até aqui",
             "2.Entendo cada item do repositorio base do Github"
             "2.Configurando seu repositório no Github",
-            "3.Dataframes",
-            "4.Interatividade - parte 1",
-            "5.Plots",
-            "6.Interatividade - parte 2",
+            "3.Fazendo o Deploy no Heroku",
+            "4.FAQ/Debuggando erros"
         ]
 
         passo_tutorial = st.selectbox(
