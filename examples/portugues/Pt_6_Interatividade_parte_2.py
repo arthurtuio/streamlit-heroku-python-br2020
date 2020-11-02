@@ -1,23 +1,24 @@
 import streamlit as st
-from lib.base_dfs_and_lists import simple_df
-from lib.filter_rows import filter_rows
+
+from examples.english.lib.base_dfs_and_lists import simple_df
+from examples.english.lib.filter_rows import filter_rows
 
 
 def exemplo_interatividade_parte_2():
     st.write("___________________________________")
 
     st.markdown("""
-        ## Using interactivity to filter dataframes ##
+        ## Usando interatividade pra filtrar dataframes ##
         
-        This example will show in pratice the potential of using
-        interactivity to filter dataframes.
+        Este exemplo mostrará na prática o potencial de uso
+        interatividade para filtrar dataframes.
         
-        You can use this same interactivity (`buttons`, `checkbox`, `selectbox`, etc)
-        to modify, **in real time**, plots, methods (like an prediction method only if
-        the user chooses a specific input), and much more.
+        Você pode usar esta mesma interatividade (`button`,`checkbox`, `selectbox`, etc)
+        para modificar, ** em tempo real **, gráficos, métodos (como um método de previsão apenas se
+        o usuário escolhe uma entrada específica) e muito mais.
         
-        We're not entering in the complexity of filter data in dataframe, just using
-        and abstract method that does that.
+        Não estamos entrando na complexidade do filtro de dados no dataframe, apenas usando
+        e método abstrato que faz isso.
         """)
     df = simple_df()
 
@@ -28,15 +29,15 @@ def exemplo_interatividade_parte_2():
     selected_row_value = st.selectbox(
         "Selecione o valor desejado para a coluna Role",
         row_unique_values
-    )
+    )  # tenta trocar esse `st.selectbox()` por um `st.sidebar.selectbox()`
 
     st.markdown(f"The selected value is: `{selected_row_value}`, which have this type `{type(selected_row_value)}`")
 
     st.markdown("""
-        **Below we see 2 dataframes:**
-        - First one is filtered by the input (notice that, in order to do this in the code, we had to create a
-        new dataframe, filtered by the selected line);
-        - Second is the old dataframe, which hasn't suffered any alterations, since it hasn't been overwritten.
+        **Abaixo vemos 2 dataframes:**
+        - O primeiro é filtrado pela entrada (observe que, para fazer isso no código, tivemos que criar um
+        novo dataframe, filtrado pela linha selecionada);
+        - Já o segundo é o dataframe antigo, que não sofreu alterações, uma vez que não foi sobrescrito.
     """)
 
     df_filtrado = filter_rows_aux_class.filter_df_using_selected_rows_values(
@@ -46,9 +47,10 @@ def exemplo_interatividade_parte_2():
     st.dataframe(df_filtrado)
     st.dataframe(df)
 
-    st.markdown("""### Lets also change an plot with the input: ###""")
-    st.bar_chart(df_filtrado)
-    st.markdown("The plot is not that useful, as it converts the index of the rows in values :/")
+    st.markdown("""
+        Pra saber mais o que é possível fazer usando interação, dá uma conferida no código do 
+        `introduction_tutorial.py`, especialmente pro tópico `4.Um pouco do que você pode fazer com essa ferramenta`.
+    """)
 
 
 if __name__ == '__main__':
