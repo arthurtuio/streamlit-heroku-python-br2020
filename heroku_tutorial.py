@@ -25,23 +25,26 @@ class HerokuTutorial:
             se precisar de qualquer ajuda, só me procurar!
         """)
 
+        lista_topicos = [
+            "1.Revisão do que vemos até aqui",
+            "2.Entendo cada item do repositorio base do Github"
+            "2.Configurando seu repositório no Github",
+            "3.Dataframes",
+            "4.Interatividade - parte 1",
+            "5.Plots",
+            "6.Interatividade - parte 2",
+        ]
+
         passo_tutorial = st.selectbox(
             "Passo a passo tutorial",
-            (
-                "1.Configurando seu repositório no Github",
-                "2.Textos - parte 2",
-                "3.Dataframes",
-                "4.Interatividade - parte 1",
-                "5.Plots",
-                "6.Interatividade - parte 2",
-            )
+            lista_topicos
         )
 
-        if passo_tutorial == "1.Configurando seu repositório no Github":
-            ConfigGithubRepo().initialize()
+        if passo_tutorial == lista_topicos[0]:
+            self.what_we_saw_until_now()
 
-        # elif passo_tutorial == "2.Textos - parte 2":
-        #     exemplo_textos_parte_2()
+        elif passo_tutorial == lista_topicos[1]:
+            ConfigGithubRepo().understanding_repo_objects()
         #
         # elif passo_tutorial == "3.Dataframes":
         #     exemplo_dataframes()
@@ -54,6 +57,26 @@ class HerokuTutorial:
         #
         # elif passo_tutorial == "6.Interatividade - parte 2":
         #     exemplo_interatividade_parte_2()
+
+    @staticmethod
+    def what_we_saw_until_now():
+        st.markdown("""
+            # 1. Revisão do que vimos até aqui
+        
+            Se você chegou nesse código, ou foi porque você está no tutorial da Python Brasil, 
+            ou porque provavelmente explorou esses dois outros códigos antes:
+            - A introdução do tutorial: https://streamlit-heroku-python-br2020.herokuapp.com/;
+            - O tutorial do streamlit: https://github.com/arthurtuio/streamlit-heroku-python-br2020/blob/master/streamlit_tutorial.py
+            
+            O que implica que você também:
+            - Clonou o repositório no seu pc;
+            - Já entendeu como usar o comando `streamlit run {codigo}`, e também conhece os métodos do streamlit.
+            
+            Se você não fez isso ainda, por favor, dá uma conferida neles antes. 
+            
+            Ou, se quiseres pular direto pra parte do Heroku, tudo bem, sem problemas :)
+        """)
+
 
 
 if __name__ == '__main__':
