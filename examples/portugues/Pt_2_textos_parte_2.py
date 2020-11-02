@@ -2,6 +2,8 @@ import streamlit as st
 
 
 def exemplo_textos_parte_2():
+    st.write("___________________________________")
+
     st.title("E usando 'st.title' um título é criado!")
 
     st.markdown("""

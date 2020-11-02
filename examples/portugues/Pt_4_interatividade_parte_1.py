@@ -1,97 +1,108 @@
 import streamlit as st
-from En_1_texts_part_1 import st_text_examples_part_1
-from En_2_texts_part_2 import st_text_examples_part_2
-from En_3_dataframes import st_dataframes_example
+
+from examples.portugues.Pt_1_textos_parte_1 import exemplo_textos_parte_1
+from examples.portugues.Pt_3_dataframes import exemplo_dataframes
 
 
 def exemplo_interatividade_parte_1():
+    st.write("___________________________________")
+
     st.markdown("""
-        ## Interactivity!! ##
+        ## Interatividade !! ##
 
-        For me, this is what makes `streamlit` an excellent tool.
+        Para mim, é isso que torna o `streamlit` uma excelente ferramenta.
         
-        Theres so much we can do about interactivity!
+        Há muito que podemos fazer em relação à interatividade!
         
-        Like, for example, **creating a button:**
+        Como, por exemplo, ** criar um botão: **
         """)
-    st.button('Press this button')  # Here we just created it!
+    if st.button('Aperte esse botão'):
+        st.write("_Não aconteceu nada! (ou aconteceu?)_")
 
-    st.markdown("**Or creating a checkbox:**")
-    st.checkbox("Press this checkbox")  # And here an checkbox!
+    st.markdown("**Ou criar uma checkbox:**")
+    st.checkbox("Posso adicionar qualquer texto aqui")
 
-    st.markdown("Or a slider!!!")
+    st.markdown("**Ou um slider!!!**")
     st.slider(
-        label="Awsome Slider", min_value=0, max_value=10
+        label="Titulo maravilhoso pro slider", min_value=0, max_value=10
     )
 
     st.markdown("""
-    We can also use those methods to call another methods, or use their return!
+        Também podemos usar esses métodos para chamar outros métodos ou usar seu retorno!
     
-    Like, calling the other examples methods if an button is pressed!
+        Por exemplo, chamar os outros métodos de exemplo se um botão for pressionado!
     """)
     if st.button('Texts Example'):
-        st_text_examples_part_1()  # Calling the
-        st_text_examples_part_2()
+        st.write("_Perceba que esse texto abaixo é o do módulo_ `1.Textos - parte 1`")
+        exemplo_textos_parte_1()  # Chamo aqui um método desse .py ou qualquer outro, desde que feito o import.
 
     if st.button('Dataframes Example'):
-        st_dataframes_example()
+        st.write("_E esse é do módulo_ `3.Dataframes`")
+        exemplo_dataframes()  # Olha que loucura né
 
-    if st.button("**Super Important Information**"):
+    if st.button("*INFORMAÇÃO SUPER IMPORTANTE!*"):
         st.markdown("""
-            ## Important  ##
+            ### Importante  ###
     
-            Once an button is clicked, it cannot be unclicked. You can only select another button, which
-            will make the last one be 'unclicked'.
+            Depois que um botão é clicado, ele não pode ser desmarcado. Você só pode selecionar 
+            outro botão, que fará com que o último seja 'desmarcado'.
         """)
 
-    if st.checkbox("Working with buttons/checkbox return"):
-        st.markdown(" # **Working with buttons/checkbox return** #")
+    if st.checkbox("Trabalhando com o retorno dos métodos que permitem interatividade"):
+        st.markdown("""
+            # **Trabalhando com o retorno dos métodos que permitem interatividade** #
+            
+            Olha que legal, os métodos do streamlit de interatividade, quando clicados, 
+            fazem a mudança na aplicação web porque o valor deles mudou.
+            
+            Conseguimos associar estes métodos a variáveis, pra capturar esses valores.
+        """)
 
-        checkbox_return = st.checkbox("Hit this checkbox")
+        checkbox_return = st.checkbox("Clica aqui nessa checkbox")
         if checkbox_return:
             button_return = st.button("Secret button")
 
         st.markdown(f"""
-            We can assign any streamlit method with an variable, like that:
+            Fazemos a associação dessa forma:
             
-            `checkbox_return = st.checkbox("Hit this checkbox")`
+            `checkbox_return = st.checkbox("Clica aqui nessa checkbox")`
             
-            And use that variable in our code freely!
-            
-            Lets first examine this variable type:
+            E aí podemos usar essa variável livremente no nosso código!
+                        
+            Vamos começar conhecendo o tipo dessa variável!
             
             `type(checkbox_return) == {type(checkbox_return)}`
         """)
 
         if checkbox_return:
             st.markdown(f"""
-                **And now the type of a button variable:**
+                **Vamos descobrir agora o tipo de um botão:**
                 `type(button_return) == {type(button_return)}`
 
                 Bool!
             """)
 
-        if button_return:
-            st.markdown("""
-                ## Important!!!!!! ##
-                **Its not a good pratice to use the return of the button to trigger another code.**
-                
-                Because, once you click anything else, like that slider, the button will be 'unpressed', 
-                making its bool value = False :( 
-            """)
-            slider_return = st.slider(label="Secret Slider", min_value=0, max_value=10)
+            if button_return:
+                st.markdown("""
+                    ## Importantante!!!!!! ##
+                    
+                    **É uma péssima prática usar o retorno de um botão pra triggar outra parte do código**
+                    
+                    Isso porque, depois de clicar em qualquer outra coisa, como um slider (ou checkbox ou botão),
+                    o botão será 'desselecionado', tornando seu valor bool = False :(
+                """)
+                slider_return = st.slider(label="Slider secreto", min_value=0, max_value=10)
 
     st.write("____________________________________________________")
 
-    if st.checkbox("What we learned section"):
+    if st.checkbox("Seção `O que aprendemos`"):
         st.markdown("""
-            ### What we learned ###
+            ### O que aprendemos ###
 
-            We learned a lot!
-            
-            The last basic thing to learn is to make plots!!!!
-            
-            """)
+            Coisa pra caramba!!
+                        
+            A última coisa que queria compartilhar com você é como usar plots!!!!!    
+        """)
 
 
 if __name__ == '__main__':

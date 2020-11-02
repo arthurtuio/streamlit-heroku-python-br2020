@@ -6,6 +6,8 @@ from lib.base_dfs_and_lists import simple_df
 
 
 def exemplo_plots():
+    st.write("___________________________________")
+
     st.markdown("""
         ## Plots!! ##
 

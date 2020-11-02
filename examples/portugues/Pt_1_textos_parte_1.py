@@ -1,12 +1,14 @@
 import streamlit as st
 import pandas as pd
-from lib.base_dfs_and_lists import simple_df
+from examples.english.lib.base_dfs_and_lists import simple_df
 
 
 def exemplo_textos_parte_1():
+    st.write("___________________________________")
+
     st.write("Escrever textos com o streamlit é super fácil :)")
 
-    st.write("É possível pular linhas usando o famigerado `\ n` \n \n !")
+    st.write("É possível pular linhas usando o famigerado `\ n` \n \n")
 
     st.write("\n\n")
 

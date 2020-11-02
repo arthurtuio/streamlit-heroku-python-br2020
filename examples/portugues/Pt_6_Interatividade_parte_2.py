@@ -4,6 +4,8 @@ from lib.filter_rows import filter_rows
 
 
 def exemplo_interatividade_parte_2():
+    st.write("___________________________________")
+
     st.markdown("""
         ## Using interactivity to filter dataframes ##
         

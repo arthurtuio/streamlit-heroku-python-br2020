@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 
-class TutorialIntroduction:
+class IntroductionTutorial:
     def __init__(self): pass
 
     def initialize(self):
@@ -23,7 +23,7 @@ class TutorialIntroduction:
             ferramentas usadas neste tutorial!
             
             A ideia é que você consiga fazer tudo por conta própria, mas se em qualquer momento,
-            tiver uma dúvida, pode me procurar! Pra isso, só selecionar a opção `4. Sobre mim e meu contato`        
+            tiver uma dúvida, pode me procurar! Pra isso, só selecionar a opção `5. Sobre mim e meu contato`        
         """)
 
         passo_tutorial = st.selectbox(
@@ -283,4 +283,5 @@ class TutorialIntroduction:
             return st.line_chart(chart_data)
 
 
-TutorialIntroduction().initialize()
+if __name__ == '__main__':
+    IntroductionTutorial().initialize()

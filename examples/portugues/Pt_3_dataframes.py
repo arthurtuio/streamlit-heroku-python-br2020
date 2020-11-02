@@ -1,5 +1,6 @@
 import streamlit as st
-from lib.base_dfs_and_lists import simple_df, simple_list
+
+from examples.english.lib.base_dfs_and_lists import simple_df, simple_list
 
 
 def remove_df_or_list_last_row(obj):
@@ -8,6 +9,8 @@ def remove_df_or_list_last_row(obj):
 
 
 def exemplo_dataframes():
+    st.write("___________________________________")
+
     st.markdown("""
         ## Bora fazer mais! ##
         
