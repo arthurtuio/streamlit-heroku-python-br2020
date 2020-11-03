@@ -2,10 +2,9 @@ import streamlit as st
 
 
 class ConfigGithubRepo:
-    def understanding_repo_objects(self): pass
+    def understanding_repo_objects(self):
 
-
-    def initialize(self):
+    def config_repo(self):  # PRECISA TER UM FORK
         st.markdown("# 1.Configurando seu repositório no Github #")
 
         passo_tutorial = st.selectbox(
