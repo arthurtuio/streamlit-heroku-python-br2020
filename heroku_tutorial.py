@@ -1,6 +1,7 @@
 import streamlit as st
 
 from examples.portugues.heroku.config_github_repo import ConfigGithubRepo
+from examples.portugues.heroku.config_heroku_account import ConfigHerokuAccount
 
 # WIP
 
@@ -23,17 +24,20 @@ class HerokuTutorial:
             
             Novamente, a ideia aqui é que você consiga fazer tudo por conta própria, mas, 
             se precisar de qualquer ajuda, só me procurar!
+            
+            __________________
         """)
 
         lista_topicos = [
             "1.Revisão do que vemos até aqui",
-            "2.Entendo cada item do repositorio base do Github"
-            "2.Configurando seu repositório no Github",
-            "3.Fazendo o Deploy no Heroku",
-            "4.FAQ/Debuggando erros"
+            "2.Entendendo os arquivos do repo",
+            "3.Configurando seu repo",
+            "4.Criando conta no Heroku",
+            "5.Fazendo o Deploy no Heroku",
+            "6.FAQ/Debuggando erros"
         ]
 
-        passo_tutorial = st.selectbox(
+        passo_tutorial = st.sidebar.selectbox(
             "Passo a passo tutorial",
             lista_topicos
         )
@@ -43,18 +47,15 @@ class HerokuTutorial:
 
         elif passo_tutorial == lista_topicos[1]:
             ConfigGithubRepo().understanding_repo_objects()
-        #
-        # elif passo_tutorial == "3.Dataframes":
-        #     exemplo_dataframes()
-        #
-        # elif passo_tutorial == "4.Interatividade - parte 1":
-        #     exemplo_interatividade_parte_1()
-        #
-        # elif passo_tutorial == "5.Plots":
-        #     exemplo_plots()
-        #
-        # elif passo_tutorial == "6.Interatividade - parte 2":
-        #     exemplo_interatividade_parte_2()
+
+        elif passo_tutorial == lista_topicos[2]:
+            ConfigGithubRepo().config_your_repo()
+
+        elif passo_tutorial == lista_topicos[3]:
+            ConfigHerokuAccount().creating_account()
+
+        elif passo_tutorial == lista_topicos[4]:
+            ConfigHerokuAccount().preparing_deploy()
 
     @staticmethod
     def what_we_saw_until_now():
@@ -74,7 +75,6 @@ class HerokuTutorial:
             
             Ou, se quiseres pular direto pra parte do Heroku, tudo bem, sem problemas :)
         """)
-
 
 
 if __name__ == '__main__':

@@ -122,6 +122,9 @@ class IntroductionTutorial:
             Para se inscrever basta acessar esse site: https://2020.pythonbrasil.org.br/
             Para ver a programação, aqui: https://2020.pythonbrasil.org.br/grade/
             
+            Você também pode acompanhar as palestras no canal da Python Brasil do Youtube, tanto
+            ao vivo quanto ou a hora que desejar! https://www.youtube.com/c/pythonbrasiloficial
+            
             **Esse tutorial será dado no domingo, dia 08, das 14h às 17h!**
         """)
 
