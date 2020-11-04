@@ -93,6 +93,9 @@ class IntroductionTutorial:
             - Esse site aqui explica como usar `git clone`: 
             https://docs.github.com/pt/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
             
+            Um outro lugar onde você pode ver como realizar as configurações é aqui:
+            - https://github.com/arthurtuio/streamlit-heroku-python-br2020/blob/master/tutoriais/github_tutorial.py
+            
             O link pra inscrição da conferência está no bloco `3. Inscrição para a Python Brasil 2020`
             
             Para configurar o ambiente local, só acessar esse repositório e seguir o tutorial do `README`:

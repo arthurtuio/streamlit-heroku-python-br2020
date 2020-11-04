@@ -56,8 +56,8 @@ class HerokuTutorial:
             Se você chegou nesse código, ou foi porque você está no tutorial da Python Brasil, 
             ou porque provavelmente explorou esses dois outros códigos antes:
             - A introdução do tutorial: https://streamlit-heroku-python-br2020.herokuapp.com/;
-            - O tutorial do github: <link>
-            - O tutorial do streamlit: https://github.com/arthurtuio/streamlit-heroku-python-br2020/blob/master/streamlit_tutorial.py
+            - O tutorial do github: https://github.com/arthurtuio/streamlit-heroku-python-br2020/blob/master/tutoriais/github_tutorial.py
+            - O tutorial do streamlit: https://github.com/arthurtuio/streamlit-heroku-python-br2020/blob/master/tutoriais/streamlit_tutorial.py
             
             O que implica que você também:
             - Clonou o repositório no seu pc;
