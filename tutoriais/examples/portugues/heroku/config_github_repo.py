@@ -1,7 +1,7 @@
 import streamlit as st
 
 global images_folder
-images_folder = "/tutoriais/examples/portugues/heroku/imagens/"
+images_folder = "examples/portugues/heroku/imagens/"
 
 
 class ConfigGithubRepo:
@@ -13,25 +13,103 @@ class ConfigGithubRepo:
             Bom, você já deve imaginar que usaremos de base este repo aqui: 
             https://github.com/arthurtuio/streamlit-heroku-python-br2020
             
-            **Os arquivos que são necessários para o deploy do heroku são:**
-            - Procfile
-            - setup.sh
-            - O código python (`.py`) que contém a aplicação do streamlit
-            que você deseja que vá para o ar.
-            
-            É sobre cada um destes arquivos que iremos falar na sequência:
+            ________
         """)
+        st.image(
+            image=images_folder + "repo-1.png",
+            caption="Os arquivos do repo",
+            width=800
+        )
+
+        st.markdown("""
+            Primeiro iremos falar das pastas, depois brevemente dos arquivos 
+            auxiliares do repo, que são:
+            - `.gitignore`
+            - `README.md`
+            - `requirements.txt`
+            
+            Após isso falaremos muito brevemente sobre o `introduction_tutorial.py`.
+            
+            Por fim, dos arquivos que o Heroku irá usar, que são:
+            - `Procfile`
+            - `setup.sh`
+            
+            _____________
+        """)
+
+        lista_topicos = [
+            "Pastas: datasets, project e tutoriais",
+            "Arquivos auxiliares do repo: .gitignore, README e requirements.txt",
+            "introduction_tutorial.py",
+            "Heroku: Procfile",
+            "Heroku: setup.sh"
+        ]
 
         passo_tutorial = st.selectbox(
             "Selecione o arquivo que deseja entender",
-            ("Procfile", "setup.sh", "Código em Python da aplicação")
+            lista_topicos
         )
 
-        if passo_tutorial == "Procfile":
+        if passo_tutorial == lista_topicos[0]:
+            self._understanding_folders()
+
+        elif passo_tutorial == lista_topicos[1]:
+            self._understanding_aux_files()
+
+        elif passo_tutorial == lista_topicos[2]:
+            self._understanding_intro_tutorial()
+
+        elif passo_tutorial == lista_topicos[3]:
             self._understanding_procfile()
 
-        elif passo_tutorial == "setup.sh":
+        elif passo_tutorial == lista_topicos[4]:
             self._understanding_setup_sh()
+
+    @staticmethod
+    def _understanding_folders():
+        st.markdown("""
+            ## Pastas do repo ##
+            
+            O que cada pasta significa:
+            
+            - datasets: É a pasta que armazena 3 tabelas, que poderão ser usadas na hora do desenvolvimento
+            do projeto;
+            
+            - project: Pasta criada para você adicionar o código do seu projeto depois!
+            
+            - tutoriais: Pasta que armazena os tutoriais do Streamlit, Github e Heroku que foram apresentados,
+            e todos os arquivos auxiliares usados pelos mesmos.
+        """)
+
+    @staticmethod
+    def _understanding_aux_files():
+        st.markdown("""
+            ## Arquivos auxiliares ##
+            
+            O que cada arquivo significa:
+            
+            - `.gitignore`: Criamos este arquivo para fazer com que o github ignore arquivos. Muito útil
+            para não subirmos, por exemplo, a pasta do ambiente virtual que usamos localmente para o repo.
+            
+            - `README.md`: Arquivo que é aberto no github automaticamente, excelente para
+            descrever o repositório ou como realizar alguma configuração para o mesmo.
+            
+            - `requirements.txt`: Arquivo de texto que contém o nome de todas as bibliotecas necessárias para
+            a execução do conteúdo do repositório.
+        """)
+
+    @staticmethod
+    def _understanding_intro_tutorial():
+        st.markdown("""
+            ## introduction_tutorial.py ##
+
+            Esse arquivo, que é um script em Python, é o código que foi usado para criar este site:
+            - https://streamlit-heroku-python-br2020.herokuapp.com/
+            
+            De todos os arquivos deste repositório, este foi o escolhido, pois é a introdução
+            do tutorial que vai te ensinar a como fazer o mesmo com qualquer script python!
+
+        """)
 
     @staticmethod
     def _understanding_procfile():

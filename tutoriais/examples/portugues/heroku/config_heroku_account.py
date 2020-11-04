@@ -1,7 +1,7 @@
 import streamlit as st
 
 global images_folder
-images_folder = "tutoriais/examples/portugues/heroku/imagens/"
+images_folder = "examples/portugues/heroku/imagens/"
 
 
 class ConfigHerokuAccount:
