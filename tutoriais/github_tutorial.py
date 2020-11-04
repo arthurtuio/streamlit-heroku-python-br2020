@@ -1,6 +1,6 @@
 import streamlit as st
 
-from tutoriais.examples.portugues.heroku.config_github_repo import ConfigGithubRepo
+from examples.portugues.heroku.config_github_repo import ConfigGithubRepo
 
 # WIP
 
