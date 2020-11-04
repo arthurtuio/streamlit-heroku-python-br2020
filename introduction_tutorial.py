@@ -87,7 +87,7 @@ class IntroductionTutorial:
             Além dessas, se você já entender de Github, vai ver que será muito fácil preparar sua aplicação. 
             **Se você não entende, se inscreve aí na Python Brasil 2020 e vai no meu tutorial!**
             Ou, se a conferência já passou, tá tranquilo, você só vai precisar criar uma conta no **Github**, 
-            e saber usar o comando `git clone`. 
+            e saber realizar `Fork`, e usar o comando `git clone`. 
             
             - Pra criar conta é só acessar aqui: https://github.com/join
             - Esse site aqui explica como usar `git clone`: 
@@ -97,7 +97,6 @@ class IntroductionTutorial:
             
             Para configurar o ambiente local, só acessar esse repositório e seguir o tutorial do `README`:
             https://github.com/arthurtuio/streamlit-heroku-python-br-2020
-            
         """)
 
     @staticmethod
