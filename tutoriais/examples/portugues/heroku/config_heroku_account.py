@@ -1,7 +1,7 @@
 import streamlit as st
 
 global images_folder
-images_folder = "examples/portugues/heroku/imagens/"
+images_folder = "tutoriais/examples/portugues/heroku/imagens/"
 
 
 class ConfigHerokuAccount:
@@ -9,7 +9,7 @@ class ConfigHerokuAccount:
     @staticmethod
     def creating_account():
         st.markdown("""
-            # 3.Criando conta no Heroku #
+            # 2.Criando conta no Heroku #
             
             Acesse a plataforma por aqui: https://www.heroku.com/
             

@@ -1,6 +1,5 @@
 import streamlit as st
 
-from examples.portugues.heroku.config_github_repo import ConfigGithubRepo
 from examples.portugues.heroku.config_heroku_account import ConfigHerokuAccount
 
 # WIP
@@ -30,11 +29,9 @@ class HerokuTutorial:
 
         lista_topicos = [
             "1.Revisão do que vemos até aqui",
-            "2.Entendendo os arquivos do repo",
-            "3.Configurando seu repo",
-            "4.Criando conta no Heroku",
-            "5.Fazendo o Deploy no Heroku",
-            "6.FAQ/Debuggando erros"
+            "2.Criando conta no Heroku",
+            "3.Fazendo o Deploy no Heroku",
+            "4.FAQ/Debuggando erros"
         ]
 
         passo_tutorial = st.sidebar.selectbox(
@@ -46,15 +43,9 @@ class HerokuTutorial:
             self.what_we_saw_until_now()
 
         elif passo_tutorial == lista_topicos[1]:
-            ConfigGithubRepo().understanding_repo_objects()
-
-        elif passo_tutorial == lista_topicos[2]:
-            ConfigGithubRepo().config_your_repo()
-
-        elif passo_tutorial == lista_topicos[3]:
             ConfigHerokuAccount().creating_account()
 
-        elif passo_tutorial == lista_topicos[4]:
+        elif passo_tutorial == lista_topicos[2]:
             ConfigHerokuAccount().preparing_deploy()
 
     @staticmethod
@@ -65,6 +56,7 @@ class HerokuTutorial:
             Se você chegou nesse código, ou foi porque você está no tutorial da Python Brasil, 
             ou porque provavelmente explorou esses dois outros códigos antes:
             - A introdução do tutorial: https://streamlit-heroku-python-br2020.herokuapp.com/;
+            - O tutorial do github: <link>
             - O tutorial do streamlit: https://github.com/arthurtuio/streamlit-heroku-python-br2020/blob/master/streamlit_tutorial.py
             
             O que implica que você também:
