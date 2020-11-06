@@ -2,7 +2,7 @@
 Repo publico criado para armazenar o codigo do tutorial "Criando uma aplicação de dados com Streamlit e deployando a mesma com Heroku" da Conferencia Python Brasil 2020.
 
 ## Executando em seu PC
-Para baixar este repositório em seu PC, você pode simplesmente cloná-lo, digitando em sua linha de comando:
+Para baixar este repositório em seu PC, faça o fork, depois o clone do mesmo, realizado da seguinte forma em sua linha de comando:
 
 `git clone https://github.com/arthurtuio/streamlit-heroku-python-br-2020.git`
 
