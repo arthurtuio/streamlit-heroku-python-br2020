@@ -19,8 +19,9 @@ def exemplo_interatividade_parte_1():
     if st.button('Aperte esse botão'):
         st.write("_Não aconteceu nada! (ou aconteceu?)_")
 
-    st.markdown("**Ou criar uma checkbox:**")
-    st.checkbox("Posso adicionar qualquer texto aqui")
+    st.markdown("**Ou criar uma checkbox:**")  # Tente botar essa linha de código dentro do if ali de cima!
+    st.checkbox("Posso adicionar qualquer texto aqui")  # Tenta trocar esse texto
+
 
     st.markdown("**Ou um slider!!!**")
     st.slider(

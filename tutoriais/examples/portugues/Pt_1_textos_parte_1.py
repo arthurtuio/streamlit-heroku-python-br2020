@@ -12,7 +12,7 @@ def exemplo_textos_parte_1():
 
     st.write("\n\n")
 
-    my_name = "Arthur"
+    my_name = "Arthur"  # Troque seu nome aqui
     my_age = 24
 
     st.write("E também é possível usar string format!! \n")
@@ -22,6 +22,9 @@ def exemplo_textos_parte_1():
         "\n\n E é possível fazer diversas outras coisas com o comando write, como por exemplo escrever um dataframe!"
     )
     st.write(pd.DataFrame(simple_df()))
+
+    # Tente escrever alguma coisa a mais nesse código, talvez criar uma variável da sua cidade e printar ela
+    # usando o `st.write`
 
 
 if __name__ == '__main__':

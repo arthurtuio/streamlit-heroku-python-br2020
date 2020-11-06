@@ -31,7 +31,7 @@ def exemplo_interatividade_parte_2():
         row_unique_values
     )  # tenta trocar esse `st.selectbox()` por um `st.sidebar.selectbox()`
 
-    st.markdown(f"The selected value is: `{selected_row_value}`, which have this type `{type(selected_row_value)}`")
+    st.markdown(f"O valor selecionado é: `{selected_row_value}`, que tem esse tipo: `{type(selected_row_value)}`")
 
     st.markdown("""
         **Abaixo vemos 2 dataframes:**
