@@ -8,18 +8,19 @@ def exemplo_textos_parte_1():
 
     st.write("Escrever textos com o streamlit é super fácil :)")
 
-    st.write("É possível pular linhas usando o famigerado `\ n` \n \n")
+    st.write("É possível pular linhas usando esse comando (veja o código!) \n \n")
 
     st.write("\n\n")
 
     my_name = "Arthur"  # Troque seu nome aqui
-    my_age = 24
+    my_age = 24  # E sua idade
 
     st.write("E também é possível usar string format!! \n")
     st.write(f"Meu nome é: {my_name}! Eu possuo {my_age} anos!")
 
     st.write(
-        "\n\n E é possível fazer diversas outras coisas com o comando write, como por exemplo escrever um dataframe!"
+        "\n\n E é possível fazer diversas outras coisas com o comando `write`, "
+        "como por exemplo escrever um dataframe!"
     )
     st.write(pd.DataFrame(simple_df()))
 
