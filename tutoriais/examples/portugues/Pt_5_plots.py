@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-from examples.english.lib.create_plot import CreatePlot
-from examples.english.lib.base_dfs_and_lists import simple_df
+from examples.lib.create_plot import CreatePlot
+from examples.lib.base_dfs_and_lists import simple_df
 
 
 def exemplo_plots():
