@@ -1,11 +1,11 @@
 import streamlit as st
 
-from examples.portugues.Pt_1_textos_parte_1 import exemplo_textos_parte_1
-from examples.portugues.Pt_2_textos_parte_2 import exemplo_textos_parte_2
-from examples.portugues.Pt_3_dataframes import exemplo_dataframes
-from examples.portugues.Pt_4_interatividade_parte_1 import exemplo_interatividade_parte_1
-from examples.portugues.Pt_5_plots import exemplo_plots
-from examples.portugues.Pt_6_Interatividade_parte_2 import exemplo_interatividade_parte_2
+from tutoriais.examples.portugues.Pt_1_textos_parte_1 import exemplo_textos_parte_1
+from tutoriais.examples.portugues.Pt_2_textos_parte_2 import exemplo_textos_parte_2
+from tutoriais.examples.portugues.Pt_3_dataframes import exemplo_dataframes
+from tutoriais.examples.portugues.Pt_4_interatividade_parte_1 import exemplo_interatividade_parte_1
+from tutoriais.examples.portugues.Pt_5_plots import exemplo_plots
+from tutoriais.examples.portugues.Pt_6_Interatividade_parte_2 import exemplo_interatividade_parte_2
 
 
 class StreamlitTutorial:
@@ -18,11 +18,12 @@ class StreamlitTutorial:
             Nesse tutorial vamos explorar algumas funções que tornam o streamlit uma excelente
             biblioteca para aplicações de dados.
             
-            Novamente, a ideia aqui é que você consiga fazer tudo por conta própria, mas, 
-            se precisar de qualquer ajuda, só me procurar!
+            Para entender como tudo é criado aqui, vá até o repositório do tutorial, na pasta
+            tutoriais/examples/portugues, e veja os códigos dos exemplos 1 a 6, comparando com
+            o que está aqui nessa página :)
         """)
 
-        passo_tutorial = st.sidebar.selectbox(
+        passo_tutorial = st.selectbox(
             "Passo a passo tutorial",
             (
                 "1.Textos - parte 1",

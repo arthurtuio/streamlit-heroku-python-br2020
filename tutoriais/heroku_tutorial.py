@@ -1,8 +1,6 @@
 import streamlit as st
 
-from examples.portugues.heroku.config_heroku_account import ConfigHerokuAccount
-
-# WIP
+from tutoriais.examples.portugues.heroku.config_heroku_account import ConfigHerokuAccount
 
 
 class HerokuTutorial:
@@ -34,7 +32,7 @@ class HerokuTutorial:
             "4.FAQ/Debuggando erros"
         ]
 
-        passo_tutorial = st.sidebar.selectbox(
+        passo_tutorial = st.selectbox(
             "Passo a passo tutorial",
             lista_topicos
         )

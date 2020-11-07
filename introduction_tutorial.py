@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+from tutoriais.tools_tutorial import ToolsTutorial
+
 
 class IntroductionTutorial:
     def __init__(self): pass
@@ -26,14 +28,15 @@ class IntroductionTutorial:
             tiver uma dúvida, pode me procurar! Pra isso, só selecionar a opção `5. Sobre mim e meu contato`        
         """)
 
-        passo_tutorial = st.selectbox(
+        passo_tutorial = st.sidebar.selectbox(
             "Passo a passo tutorial",
             (
                 "1.Tecnologias utilizadas",
                 "2.Configurando o ambiente local",
                 "3.Inscrição para a Python Brasil 2020",
                 "4.Um pouco do que você pode fazer com essa ferramenta",
-                "5.Sobre mim e meu contato"
+                "5.Sobre mim e meu contato",
+                "6.Tutoriais das tecnologias"
             )
         )
 
@@ -51,6 +54,9 @@ class IntroductionTutorial:
 
         elif passo_tutorial == "5.Sobre mim e meu contato":
             self._my_contact()
+
+        elif passo_tutorial == "6.Tutoriais das tecnologias":
+            ToolsTutorial()
 
     def _descriptions(self):
         st.markdown("""
@@ -89,17 +95,14 @@ class IntroductionTutorial:
             Ou, se a conferência já passou, tá tranquilo, você só vai precisar criar uma conta no **Github**, 
             e saber realizar `Fork`, e usar o comando `git clone`. 
             
-            - Pra criar conta é só acessar aqui: https://github.com/join
-            - Esse site aqui explica como usar `git clone`: 
+            Criei um tutorial pra ajudar nessa parte do Github, para acessar, só ir para o item 6.1 :)
+            
+            Ou, se preferir checar a documentação do github:
+            > - Pra criar conta é só acessar aqui: https://github.com/join
+            > - Esse site aqui explica como usar `git clone`: 
             https://docs.github.com/pt/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
             
-            Um outro lugar onde você pode ver como realizar as configurações é aqui:
-            - https://github.com/arthurtuio/streamlit-heroku-python-br2020/blob/master/tutoriais/github_tutorial.py
-            
-            O link pra inscrição da conferência está no bloco `3. Inscrição para a Python Brasil 2020`
-            
-            Para configurar o ambiente local, só acessar esse repositório e seguir o tutorial do `README`:
-            https://github.com/arthurtuio/streamlit-heroku-python-br-2020
+            O link pra inscrição da conferência está no bloco `3. Inscrição para a Python Brasil 2020`        
         """)
 
     @staticmethod

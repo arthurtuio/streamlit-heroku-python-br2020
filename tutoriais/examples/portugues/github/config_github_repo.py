@@ -1,14 +1,14 @@
 import streamlit as st
 
 global images_folder
-images_folder = "examples/portugues/heroku/imagens/"
+images_folder = "tutoriais/examples/portugues/heroku/imagens/"
 
 
 class ConfigGithubRepo:
 
     def understanding_repo_objects(self):
         st.markdown("""
-            # 1.Entendendo os arquivos do repo #
+            ## 1.Entendendo os arquivos do repo ##
             
             Bom, você já deve imaginar que usaremos de base este repo aqui: 
             https://github.com/arthurtuio/streamlit-heroku-python-br2020
@@ -183,7 +183,7 @@ class ConfigGithubRepo:
     @staticmethod
     def config_your_repo():
         st.markdown("""
-             # 2.Configurando seu repo #
+             ## 2.Configurando seu repo ##
              
              O que precisa ser feito é primeiramente um `Fork` deste repositório, isto é,
              você vai criar uma cópia dele, mas na sua conta do Github.

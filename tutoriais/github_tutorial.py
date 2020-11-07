@@ -1,22 +1,16 @@
 import streamlit as st
 
-from examples.portugues.heroku.config_github_repo import ConfigGithubRepo
-
-# WIP
+from tutoriais.examples.portugues.github.config_github_repo import ConfigGithubRepo
 
 
 class GithubTutorial:
-
     @staticmethod
     def initialize():
         st.markdown("""
             # Tutorial específico do Github #
             
-            **Nesse tutorial vamos aprender como deixar o Github configurado para posteriormente
-            realizarmos o deploy no Heroku.**
-            
-            Novamente, a ideia aqui é que você consiga fazer tudo por conta própria, mas, 
-            se precisar de qualquer ajuda, só me procurar!
+            **Nesse tutorial vamos aprender como deixar o Github configurado para
+            começarmos a usar o Streamlit, e posteriormente realizarmos o deploy no Heroku.**
             
             __________________
         """)
@@ -26,16 +20,18 @@ class GithubTutorial:
             "2.Configurando seu repo"
         ]
 
-        passo_tutorial = st.sidebar.selectbox(
+        passo_tutorial = st.selectbox(
             "Passo a passo tutorial",
             lista_topicos
         )
 
+        config_github = ConfigGithubRepo()
+
         if passo_tutorial == lista_topicos[0]:
-            ConfigGithubRepo().understanding_repo_objects()
+            config_github.understanding_repo_objects()
 
         elif passo_tutorial == lista_topicos[1]:
-            ConfigGithubRepo().config_your_repo()
+            config_github.config_your_repo()
 
 
 if __name__ == '__main__':

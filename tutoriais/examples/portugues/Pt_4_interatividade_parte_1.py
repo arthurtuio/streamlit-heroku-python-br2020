@@ -1,7 +1,7 @@
 import streamlit as st
 
-from examples.portugues.Pt_1_textos_parte_1 import exemplo_textos_parte_1
-from examples.portugues.Pt_3_dataframes import exemplo_dataframes
+from tutoriais.examples.portugues.Pt_1_textos_parte_1 import exemplo_textos_parte_1
+from tutoriais.examples.portugues.Pt_3_dataframes import exemplo_dataframes
 
 
 def exemplo_interatividade_parte_1():
