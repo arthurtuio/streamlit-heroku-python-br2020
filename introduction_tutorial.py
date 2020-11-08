@@ -88,7 +88,11 @@ class IntroductionTutorial:
             estas ferramentas, existem alguns pré-requisitos que você precisa ter. São eles:
             
                 1. Conhecimento básico sobre Python - e também alguma familiaridade com estruturas de dados.
-                2. Ter alguma ferramenta (IDE) que permita programar em Python em seu PC (recomendo o PyCharm Community);
+                2. Ter alguma ferramenta (IDE) que permita programar em Python em seu PC.
+                
+            Sobre IDE, recomendo PyCharm Community (CE) ou Visual Studio Code, no caso do Windows.
+            - Para fazer o download do Pycharm CE: https://www.jetbrains.com/pt-br/pycharm/download/
+            - Para fazer o download do VSCode: https://code.visualstudio.com/download
         
             Além dessas, se você já entender de Github, vai ver que será muito fácil preparar sua aplicação. 
             **Se você não entende, se inscreve aí na Python Brasil 2020 e vai no meu tutorial!**
