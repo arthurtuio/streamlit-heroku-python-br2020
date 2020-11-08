@@ -131,3 +131,47 @@ class ConfigHerokuAccount:
             caption="Hora da verdade do seu app",
             width=700
         )
+
+    @staticmethod
+    def faq_debugging():
+        st.markdown("""
+            # 4.FAQ/Debuggando erros #
+
+            Aqui foram listados alguns erros que eu tive durante o desenvolvimento
+            da aplicação, os quais, se você vir a ter também, pode checar aqui a solução!
+            
+            ____________________
+
+            
+            ### `Application Error` no site ##
+            
+            Se apareceu esse erro, a primeira coisa para debuggarmos é ver o `log` de erro do
+            Heroku.
+            
+            Pra fazer isso, basta rodar esse comando no terminal:
+            ```
+            heroku logs --tail --app your_app_name
+            ```
+            
+            Se o que apareceu foi: **`error code=H10`**:
+            - Um possível motivo pra esse erro é que nome da aplicação está errado no `Procfile`
+            
+            ____________________
+            
+            ### `src refspec master does not match any` ###
+            
+            Se na hora que você foi fazer `git push heroku master`, apareceu esse erro, a solução que
+            resolveu no meu caso foi bem simples, só precisei digitar isso no terminal:
+            ```
+            git push heroku HEAD:master
+            ```
+            - Uma explicação pra ela se encontra aqui: https://stackoverflow.com/questions/8196544/what-are-the-git-concepts-of-head-master-origin/8196578#8196578
+            
+            ____________________
+            
+            Se no log veio outro erro, ou aconteceu algo errado em outra etapa, tente capturar o nome
+            desse erro, e aí minha dica é usar o google. Também posso te ajudar a procurar
+            pela solução na internet :) 
+            
+            O mais importante é descobrir qual foi o erro, a solução com certeza existe na internet!
+        """)

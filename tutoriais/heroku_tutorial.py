@@ -46,6 +46,9 @@ class HerokuTutorial:
         elif passo_tutorial == lista_topicos[2]:
             ConfigHerokuAccount().preparing_deploy()
 
+        elif passo_tutorial == lista_topicos[3]:
+            ConfigHerokuAccount().faq_debugging()
+
     @staticmethod
     def what_we_saw_until_now():
         st.markdown("""
