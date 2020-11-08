@@ -1,7 +1,7 @@
 import streamlit as st
 
-from tutoriais.examples.lib.base_dfs_and_lists import simple_df
-from tutoriais.examples.lib.filter_rows import filter_rows
+from lib.base_dfs_and_lists import simple_df
+from lib.filter_rows import filter_rows
 
 
 def exemplo_interatividade_parte_2():

@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from tutoriais.examples.lib.base_dfs_and_lists import simple_df
+from lib.base_dfs_and_lists import simple_df
 
 
 def exemplo_textos_parte_1():

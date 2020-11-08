@@ -67,13 +67,3 @@ class CreatePlot:
         )
 
         return fig
-
-    def sunburst_plot(self, value_to_analyse):
-        fig = px.sunburst(
-            self.df,
-            path=['Grupo_Tarifario', 'Campus_Unique_Name', 'year', 'MM_YY_ref'],
-            values=value_to_analyse
-        )
-
-        fig.update_layout(margin=dict(t=0, l=0, r=0, b=0))
-        return fig
