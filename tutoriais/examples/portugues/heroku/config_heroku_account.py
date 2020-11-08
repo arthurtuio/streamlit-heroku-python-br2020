@@ -173,5 +173,7 @@ class ConfigHerokuAccount:
             desse erro, e aí minha dica é usar o google. Também posso te ajudar a procurar
             pela solução na internet :) 
             
+            Na própria página do Heroku tem uma lista dos erros possíveis: https://devcenter.heroku.com/articles/error-codes 
+            
             O mais importante é descobrir qual foi o erro, a solução com certeza existe na internet!
         """)
