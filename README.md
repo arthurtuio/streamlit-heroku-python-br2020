@@ -10,6 +10,6 @@ Em seguida, você deve instalar as bibliotecas necessárias para executar o cód
 - `pip3 install -r requirements.txt`
 
 ## Exemplo de scripts do Streamlit
-Na pasta `/examples/english`, há exemplos de scripts que podem ser executados no streamlit, para entender melhor a lib.
+Na pasta `/tutoriais/examples`, há exemplos de scripts que podem ser executados no streamlit, para entender melhor a lib.
 Para executar qualquer um deles, basta digitar na linha de comando: `streamlit run {example_name}`, onde `{example_name}` é o nome do arquivo, assim:
 `streamlit run En_6_Interactivity_part_2.py`
