@@ -1,4 +1,4 @@
-# Português
+# Criando uma aplicação de dados do Zero usando Streamlit e Deployando com Heroku
 Repo publico criado para armazenar o codigo do tutorial "Criando uma aplicação de dados com Streamlit e deployando a mesma com Heroku" da Conferencia Python Brasil 2020.
 
 Todos os tutoriais estão presentes nesse site: https://streamlit-heroku-python-br2020.herokuapp.com/
